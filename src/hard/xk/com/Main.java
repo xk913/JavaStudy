@@ -49,8 +49,12 @@ public class Main {
                 break;
         }
         //遍历
+
+        String s=stu.toString();
+
         for (int i = 0; i < array.size(); i++) {
-            array.get(i);
+
+            System.out.println(array.get(i));
         }
     }
 

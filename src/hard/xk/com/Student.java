@@ -41,6 +41,15 @@ public class Student implements Comparable {
     private int score;
 
     @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                ", score=" + score +
+                '}';
+    }
+
+    @Override
     public int compareTo(Object o) {
         //对引用数据类型排序，必须实现Comparable接口中的此方法.
         Student student = (Student) o;
