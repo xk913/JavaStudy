@@ -13,7 +13,7 @@ public class StudentManager {
 
     public void show() {
         ArrayList<Student> students = (ArrayList<Student>) Tools
-                .input("users.shanjin");
+                .input("xk");
         if (students == null) {
             students = new ArrayList<Student>();
         }
@@ -30,7 +30,7 @@ public class StudentManager {
 
     public void add() {
         ArrayList<Student> students = (ArrayList<Student>) Tools
-                .input("users.shanjin");
+                .input("xk");
 
         if (students == null) {
             students = new ArrayList<Student>();
@@ -51,12 +51,12 @@ public class StudentManager {
         s.setScore(score);
 
         students.add(s);
-        Tools.output(students, "users.shanjin");
+        Tools.output(students, "xk");
     }
 
     public void delete() {
         ArrayList<Student> students = (ArrayList<Student>) Tools
-                .input("users.shanjin");
+                .input("xk");
         if (students == null) {
             students = new ArrayList<Student>();
         }
@@ -70,13 +70,13 @@ public class StudentManager {
                 break;
             }
         }
-        Tools.output(students, "users.shanjin");
+        Tools.output(students, "xk");
 
     }
 
     public void modify() {
         ArrayList<Student> students = (ArrayList<Student>) Tools
-                .input("users.shanjin");
+                .input("xk");
         if (students == null) {
             students = new ArrayList<Student>();
         }
@@ -113,7 +113,7 @@ public class StudentManager {
         } else {
             System.out.println("没有查询到修改的对象");
         }
-        Tools.output(students, "users.shanjin");
+        Tools.output(students, "xk");
 
     }
 
@@ -121,7 +121,7 @@ public class StudentManager {
         Scanner scanner = new Scanner(System.in);
         StudentManager sm = new StudentManager();
         ArrayList<Student> students = (ArrayList<Student>) Tools
-                .input("users.shanjin");
+                .input("xk");
         if (students == null) {
             students = new ArrayList<Student>();
         }
@@ -154,7 +154,7 @@ public class StudentManager {
 
             } else {
 
-                System.out.println("ÊäÈëÓÐÎó£¡");
+                System.out.println("-----");
             }
 
         } while (true);
